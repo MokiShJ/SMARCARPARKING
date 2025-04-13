@@ -277,15 +277,14 @@
   <div class="main-container">
     <nav class="navbar">
       <div class="logo">SMART CAR PARKING SYSTEM</div>
-      <div class="right-nav">
-        <!-- Add any navigation items here -->
-      </div>
+      <div class="right-nav"></div>
     </nav>
 
     <section class="hero">
       <div class="hero-text">
         <h1>Smart Car Parking</h1>
-        <p>"Why Stress Over Parking? Let Us Do the Heavy Lifting! Your Car's Favorite Parking Spot Awaits!"</p>
+        <p>"Park Like a Pro, No More Searching for Spaces!"  
+           "Because Your Car Deserves a VIP Spot."</p>
         <div class="hero-buttons">
           <button class="hero-btn primary-btn" onclick="showParkingArea()">Parking Area</button>
           <button class="hero-btn secondary-btn" onclick="showBookingPage()">Booking</button>
@@ -304,9 +303,12 @@
     <div class="hour-options" id="hourOptions"></div>
   </div>
 
+  <!-- Step Down Space (only 2 lines now) -->
+  <br><br>
+
   <div class="about-container" id="about">
     <h2 class="about-header">About Us</h2>
-    <p class="about-text">We are dedicated to simplifying parking with innovation and user-centric design, offering hassle-free parking solutions.</p>
+    <p class="about-text">We are a team of passionate innovators dedicated to making parking smarter and hassle-free. With a blend of tech expertise and user-centric design, we’re here to redefine how you park — effortlessly and efficiently.</p>
     <div class="team">
       <div class="member"><div class="name">Mokish J</div></div>
       <div class="member"><div class="name">Surendar C R</div></div>
@@ -334,7 +336,6 @@
     let selectedSlot = null;
     const starsContainer = document.getElementById('starsContainer');
 
-    // Generate stars
     for (let i = 0; i < 150; i++) {
       const star = document.createElement('div');
       star.className = 'star';
@@ -415,7 +416,7 @@
     }
 
     function redirectToNextPage() {
-      window.location.href = 'nextPage.html';  // Replace with your next page URL
+      window.location.href = 'nextPage.html';
     }
 
     createSlots();
